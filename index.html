@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Metasuit</title>
+  <meta name="google-site-verification" content="iUHZ9XnJKXfDw7TwZKU_bQ718XsnTGtI5-auCkzovgU" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Sensational Realities">
+  <meta name="keywords" content="meta, metaverse, sensing, technology, jquery">
+  <meta name="author" content="CCFBME">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/team.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon_OG.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <input type="image" id="image" alt="Login" src="assets/img/MetaSuitWebsiteLogo3.png" class="cta_logo">
+    </a>
+    <p class="device-notification--message">MetaSuit has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
+  
+  <div class="perspective effect-rotate-left">
+    <div class="container"><div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <input type="image" id="image" alt="METASUIT" src="assets/img/MetaSuitWebsiteLogo3.png" class="cta_logo">
+            </a>
+            <div class="header--social-icons">
+              <a href="https://twitter.com/MetaSuit_ETH" class="fa fa-twitter"></a>
+              <a href="https://www.instagram.com/metasuit.ethz/" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/company/metasuit/" class="fa fa-linkedin"></a>
+            </div>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          
+            
+          </header>
+          
+
+
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Vision</span></li>
+              <li><span>Technology</span></li>
+              <li><span>Project</span></li>
+              <li><span>Team</span></li>
+              <li><span>Contact</span></li>
+            </ul>
+          </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+              <div class="intro">
+              
+                <div class="intro--banner">
+                  <video id="intro-video" src="assets/videos/MTST-Teaser.mp4" autoplay muted loop></video>
+                </div>
+              
+                <script>
+                  // Get the video element
+                  const video = document.getElementById('intro-video');
+              
+                  // Autoplay the video on page load
+                  video.play();
+              
+                  // Function to toggle mute state on video click
+                  function toggleMute() {
+                    video.muted = !video.muted;
+                    const banner = document.querySelector('.intro--banner');
+                    banner.classList.toggle('muted');
+                  }
+              
+                  // Add event listener to toggle mute on video click
+                  video.addEventListener('click', toggleMute);
+              
+                  // Function to handle scrolling
+                  function handleScroll(event) {
+                    video.muted = true;
+                    // Prevent the default scrolling behavior
+                    event.preventDefault();
+                  }
+              
+                  // Add event listener for wheel event
+                  window.addEventListener('wheel', handleScroll, { passive: false });
+                </script>
+              
+                <script>
+                  // Get the banner element
+                  const banner = document.querySelector('.intro--banner');
+              
+                  // Add event listeners to show/hide the custom cursor
+                  banner.addEventListener('mouseenter', showCursor);
+                  banner.addEventListener('mouseleave', hideCursor);
+                  banner.addEventListener('click', toggleCursor);
+              
+                  let cursorState = false; // Track the cursor state (false: sound.png, true: sound2.png)
+              
+                  // Function to show the custom cursor
+                  function showCursor() {
+                    banner.classList.add('show-cursor');
+                  }
+              
+                  // Function to hide the custom cursor
+                  function hideCursor() {
+                    banner.classList.remove('show-cursor');
+                  }
+              
+                  // Function to toggle the cursor image
+                  function toggleCursor() {
+                    const cursor = document.querySelector('.intro--banner.show-cursor');
+                    cursorState = !cursorState; // Toggle the cursor state
+              
+                    // Toggle the CSS class based on the cursor state
+                    if (cursorState) {
+                      cursor.classList.add('sound2');
+                      cursor.classList.remove('sound');
+                    } else {
+                      cursor.classList.add('sound');
+                      cursor.classList.remove('sound2');
+                    }
+                  }
+                </script>
+                
+                <div class="row">
+                  <div class="rowElement">
+                    <h1>Press Mentions</h1>
+                    <div class="intro--options">
+                      <a target="_blank" href="https://www.spiegel.de/netzwelt/metasuit-studierende-entwickeln-anzug-fuer-virtual-reality-der-auch-parkinson-patienten-helfen-koennte-a-8683c17b-dd23-4297-94fb-edd6fbd426d7">
+                        <div class="TvSponsor">
+                          <img src="assets/img/posts1.png" alt="">
+                        </div>
+                      </a>
+                      <a target="_blank" href="https://www.reuters.com/video/watch/this-suit-may-help-you-feel-the-metavers-id768630785?chan=4o4ygt3a">
+                        <div class="TvSponsor">
+                          <img src="assets/img/posts2.png" alt="">
+                        </div>
+                      </a>
+                      <a target="_blank" href="https://ethz.ch/en/news-and-events/eth-news/news/2023/05/from-robotic-fish-to-artificial-muscles.html">
+                        <div class="TvSponsor">
+                          <img src="assets/img/posts3.png" alt="">
+                        </div>
+                      </a>
+                      
+                    </div>
+                  </div>
+                  <div class="rowElement">
+                    <h1>TV Mentions</h1>
+                    <div class="intro--options">
+                        <div class="TvSponsor">
+                          <img src="assets/img/tv1.png" alt="">
+                        </div>
+                        <div class="TvSponsor">
+                          <img src="assets/img/tv2.png" alt="">
+                        </div>
+                        <div class="TvSponsor">
+                          <img src="assets/img/tv3.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <hm2>
+                Our Vision
+              </hm2>
+              <div class="ourVisionVideos">
+                <div class="row">
+                  <div class="ourVisionVideo">
+                    <video src="assets/videos/ourvision1.mp4"></video>
+                    <p class="slider--item-title">MIXED REALITY APPLICATION</p>
+                    <p>
+                      MetaSuit envisions the integration of soft artificial muscles into a full-body suit which allows to map the pose and movement of people while also providing hapitic feedback.
+                    </p>
+                  </div>
+                  <div class="ourVisionVideo">
+                    <video src="assets/videos/ourvision2.mp4"></video>
+                    <p class="slider--item-title">MEDICAL APPLICATION</p>
+                    <p>
+                      Patients could wear our suit after surgery to use the motion data for rehabilitation purposes. Parkinson's patients could receive haptic feedback to reactivate their frozen muscles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <script>
+                // Get all the video elements
+                const videos = document.querySelectorAll('.ourVisionVideo video');
+                // Loop through each video
+                videos.forEach((video) => {
+                  // Add event listeners for hover and touch events
+                  video.addEventListener('mouseenter', playVideo);
+                  video.addEventListener('mouseleave', pauseVideo);
+                  video.addEventListener('touchstart', playVideo);
+                  video.addEventListener('touchend', pauseVideo);
+                });
+                // Function to play the video
+                function playVideo(event) {
+                  const video = event.target;
+                  video.play();
+                }
+                // Function to pause the video
+                function pauseVideo(event) {
+                  const video = event.target;
+                  video.pause();
+                }
+              </script>
+              <!-- <div class="work--lockup">
+                <ul class="slider">
+                  
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/Money.png" alt="Cost Reduction">
+                      </div>
+                      <p class="slider--item-title">Cost Reduction in the Industry</p>
+                      <p class="slider--item-description">We work with cost-efficient, easily producible HASEL actuators </p>
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <!--Ab hier ist das Technology-->
+
+          <li class="l-section section">
+
+              
+              <div class="work">
+                <hm2 class="hm2work" style="margin-top: -75px; margin-bottom: 10px;">
+                  Innovation
+                </hm2>
+                <div class="ourTechVideos" style="margin-top: -30px;">
+                  <div class="row">
+                    <div class="ourTechVideo">
+                      <video src="assets/videos/inn1.mp4" muted></video>
+                      <p class="slider--item-title">Haptic Feedback</p>
+                    </div>
+                    <div class="ourTechVideo">
+                      <video src="assets/videos/inn2.mp4" muted></video>
+                      <p class="slider--item-title">Realtime Movement Tracking</p>
+                    </div>
+                    <div class="ourTechVideo">
+                      <video src="assets/videos/inn3.mp4" muted></video>
+                      <p class="slider--item-title">Cheap Novel Artificial Muscles</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <script>
+                  // Get all the video elements
+                  const videot = document.querySelectorAll('.ourTechVideo video');
+                
+                  // Loop through each video
+                  videot.forEach((video) => {
+                    // Add event listeners for hover and touch events
+                    video.addEventListener('mouseenter', playVideo);
+                    video.addEventListener('mouseleave', pauseVideo);
+                    video.addEventListener('touchstart', playVideo);
+                    video.addEventListener('touchend', pauseVideo);
+                    video.addEventListener('mouseover', addBorder);
+                    video.addEventListener('mouseout', removeBorder);
+                  });
+                
+                  // Function to play the video
+                  function playVideo(event) {
+                    const video = event.target;
+                    video.play();
+                  }
+                
+                  // Function to pause the video
+                  function pauseVideo(event) {
+                    const video = event.target;
+                    video.pause();
+                  }
+                
+                  // Function to add the border
+                  function addBorder(event) {
+                    const video = event.target;
+                    video.style.border = '5px solid blue';
+                  }
+                
+                  // Function to remove the border
+                  function removeBorder(event) {
+                    const video = event.target;
+                    video.style.border = 'none';
+                  }
+                </script>
+                
+                <p class="innovationPtag" style="margin-top: -50px;">
+                  The project's main objective is to create a soft, light and natural feeling suit that will allow users to move and interact within VR environments and overcome many of the drawbacks of
+                  vision based motion capture systems and handheld devices.
+                </p>
+                <hm2 class="hm2work" style="margin-top: 30px;">
+                  Technology
+                </hm2>
+                <div class="technologyrow" style="margin-top: -30px;">
+                  <div class="row">
+                    <div class="other-video-container">
+                      <div id="bound-one" class="scroll-bound">
+                        <div class="content">
+                           <video muted preload>
+                            <source src="assets/videos/technology.mp4" type="video/webm">
+                            <p>Your user agent does not support the HTML5 Video element.</p>
+                          </video>
+                        </div>
+                      </div>
+                      <script>
+                        const registerVideo = (bound, video) => {
+                        bound = document.querySelector(bound);
+                        video = document.querySelector(video);
+                        const scrollVideo = ()=>{
+                          if(video.duration) {
+                            const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
+                            const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);
+                            const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+                            
+                            video.currentTime = video.duration * percentScrolled;
+                          }
+                          requestAnimationFrame(scrollVideo);
+                        }
+                        requestAnimationFrame(scrollVideo);
+                      }
+
+
+                      registerVideo("#bound-one", "#bound-one video");
+
+                      registerVideo("#bound-two", "#bound-two video")
+
+                      registerVideo("#bound-three", "#bound-three video")
+                      </script>
+                    </div>
+                    <script>
+                      // Get the video elements
+                      const otherVideo = document.getElementById('videoElement');
+                    
+                      // Function to handle scrolling
+                      function handleScroll() {
+                        otherVideo.muted = false; // Unmute the other video
+                        otherVideo.play(); // Play the other video
+                      }
+                    
+                      // Add event listener for wheel event
+                      window.addEventListener('wheel', handleScroll, { passive: false });
+                    </script>
+                    <p class="innovationPtag">
+                      When a voltage is applied, the electrodes on the left contract, causing the liquid to be forced to the other side letting the HAGEL to contract like a muscle.  
+                    </p>
+                  </div>
+                </div>
+                <p class="innovationPtag" style="margin-top: 20px;">
+                  By incorporating additional measuring electrodes (as seen on the right) and our self-developed circuit, we can accurately capture and suppress interfering signals, while simultaneously monitoring multiple HASELs.
+                </p>
+                <!-- <div class="work--lockup">
+                  <ul class="slider">
+                    
+                    <li class="slider--item slider--item-right">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/Money.png" alt="Cost Reduction">
+                        </div>
+                        <p class="slider--item-title">Cost Reduction in the Industry</p>
+                        <p class="slider--item-description">We work with cost-efficient, easily producible HASEL actuators </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+          </li>
+
+
+
+
+
+          <!--Ab hier ist das Project-->
+
+          <li class="l-section section">
+            <div class="work">
+              <hm2 class="hm2work" style="margin-top: -65px;">
+                Focus Project
+              </hm2>
+              <p class="innovationPtag" style="margin-top: -50px;">
+                The focus project is a curricular program open to students of mechanical and electrical engineering at ETH Zurich in the final year of their bachelor's degree. Over nine months, the team commits itself to solving complex engineering problems under the supervision of a professor. The project allows students to develop technical knowledge, project management skills and to build relationships with academic as well as industrial partners.
+                MetaSuit is overseen and supported by the Soft Robitics Lab and the Sensory-Motor Systems Lab. <br>
+              </p>
+              <div class="technologyrow">
+                <div class="row">
+                  <div class="rowsOne">
+                    <img src="assets/img/Team.jpeg" alt="">
+                  </div>
+                  <div class="rowsOne1">
+                    <div class="row">
+                      <a target="_blank" href="https://sms.hest.ethz.ch/">
+                        <div class="TvSponsor1">
+                          <img src="assets/img/fp3.png" alt="">
+                        </div>
+                      </a>
+                      <a target="_blank" href="https://srl.ethz.ch/">
+                        <div class="TvSponsor1">
+                          <img src="assets/img/fp2.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="row">
+                      <a target="_blank" href="https://ethz.ch/en.html">
+                        <div class="TvSponsor1">
+                          <img src="assets/img/fp1.png" alt="">
+                        </div>
+                      </a>
+                      <a target="_blank" href="https://mavt.ethz.ch/">
+                        <div class="TvSponsor1">
+                          <img src="assets/img/fp4.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="row">
+                      <a target="_blank" href="https://mavt.ethz.ch/">
+                        <div class="TvSponsor1">
+                          <img src="assets/fp5.png" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hm2 class="hm2work" style="margin-top: 30px;">
+                Partners
+              </hm2>
+              <p class="innovationPtag" style="margin-top: -50px; margin-bottom: 10px;">
+                Since we are a non-profit student project and do not have any revenue, we rely fully on our sponsors who support us mostly through financial and technical support as well as material donations.
+              </p>
+              <div class="intro--options2">
+                <div class="row">
+                  <div class="TvSponsor">
+                    <img src="assets/img/part1.png" alt="">
+                  </div>
+                  <div class="TvSponsor">
+                    <img src="assets/img/part2.png" alt="">
+                  </div>
+                  <div class="TvSponsor">
+                    <img src="assets/img/part3.png" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="TvSponsor">
+                    <img src="assets/img/part4.png" alt="">
+                  </div>
+                  <div class="TvSponsor">
+                    <img src="assets/img/part5.png" alt="">
+                  </div>
+                  <div class="TvSponsor">
+                    <img src="assets/img/part6.png" alt="">
+                  </div>
+                </div>
+            </div>
+              <!-- <div class="work--lockup">
+                <ul class="slider">
+                  
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/Money.png" alt="Cost Reduction">
+                      </div>
+                      <p class="slider--item-title">Cost Reduction in the Industry</p>
+                      <p class="slider--item-description">We work with cost-efficient, easily producible HASEL actuators </p>
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+
+
+
+          <li class="l-section section">
+        
+          
+            <div class="container_team">
+              <hm2>Team</hm2>
+              
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/max.JPG" alt="Max">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/in/maximilian-eberlein-616334237/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#109;&#97;&#105;&#76;&#84;&#79;&#58;&#109;&#101;&#98;&#101;&#114;&#108;&#101;&#105;&#110;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4>Maximilian Eberlein</h4>
+                        <h5>Project Lead, Signal Networks, Mixed reality UI/UX 
+                        </h5>
+        
+                    </div>
+                    <!-- <div class="sci">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+            </div>
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/ccc.JPG" alt="Clemens">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/in/clemens-christoph-191886239/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#109;&#97;&#73;&#76;&#116;&#111;&#58;&#99;&#99;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4> <br> Clemens Christoph</h4>
+                        <h5>Digital Signal Processing, Data Analysis and Visualization</h5>
+        
+                    </div>
+                    <!-- <div class="sci">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/wim.JPG" alt="Wim">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/in/wimwende/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#109;&#65;&#105;&#76;&#116;&#79;&#58;&#119;&#119;&#101;&#110;&#100;&#101;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4>Wim<br>Wende</h4>
+                        <h5>Rapid Prototyping, Design and Mechanical Integration, Marketing
+                        </h5>
+                    </div>
+                    <!-- <div class="sci">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/fabrice.JPG" alt="Fabrice">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/company/metasuit/about/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#109;&#65;&#105;&#108;&#116;&#111;&#58;&#102;&#98;&#111;&#117;&#114;&#113;&#105;&#110;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4>Fabrice<br>Bourquin</h4>
+                        <h5>Embedded Systems, Signal Networks, Mixed reality UI/UX</h5>
+                    </div>
+                    <!-- <div class="sci">
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+            </div>
+              <div class="card">
+                  <div class="content">
+                      <div class="imgBx">
+                          <img src="assets/img/michel.JPG" alt="Michel">
+                      </div>
+                      <div class="lefticonBx">    
+                        <a href="https://www.linkedin.com/company/metasuit/about/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                      </div>
+                      <div class="righticonBx">
+                        <a href="&#109;&#97;&#73;&#108;&#116;&#111;&#58;&#109;&#105;&#99;&#118;&#111;&#103;&#116;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                      </div>
+                      <div class="contentBx">
+                          <h4>Michel<br>Vogt</h4>
+                          <h5>HASEL Self-Sensing R&D, PCB Design and Production
+                          </h5>
+                      </div>
+                      <!-- <div class="sci">
+                          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </div> -->
+                  </div>
+              </div>
+              
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/luca.JPG" alt="Luca">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/company/metasuit/about/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#109;&#65;&#105;&#76;&#84;&#79;&#58;&#108;&#117;&#103;&#114;&#97;&#98;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4>Luca<br>Grab</h4>
+                        <h5>PCB Assembly, Testing and Optimization, Electrical & Mechanical Integration
+                        </h5>
+                    </div>
+                    <!-- <div class="sci">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="assets/img/fabio.JPG" alt="Fabio">
+                    </div>
+                    <div class="lefticonBx">    
+                      <a href="https://www.linkedin.com/company/metasuit/about/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                    </div>
+                    <div class="righticonBx">
+                      <a href="&#77;&#65;&#73;&#76;&#84;&#79;&#58;&#102;&#97;&#115;&#99;&#104;&#97;&#117;&#98;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                    </div>
+                    <div class="contentBx">
+                        <h4>Fabio<br>Schaub</h4>
+                        <h5>HASEL Design and Fabrication, High Voltage Applications, Testing</h5>
+                    </div>
+                    <!-- <div class="sci">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+            </div>
+              <div class="card">
+                  <div class="content">
+                      <div class="imgBx">
+                          <img src="assets/img/felix.JPG" alt="Felix">
+                      </div>
+                      <div class="lefticonBx">    
+                        <a href="https://www.linkedin.com/company/metasuit/about/" target="_blank"> <img alt="Linked In" src="assets/img/linked-in.png"> </a>
+                      </div>
+                      <div class="righticonBx">
+                        <a href="&#109;&#65;&#73;&#76;&#116;&#79;&#58;&#102;&#101;&#98;&#97;&#117;&#109;&#97;&#110;&#110;&#64;&#101;&#116;&#104;&#122;&#46;&#99;&#104;" target="_blank"> <img alt="Mail" src="assets/img/mail-logo.png">  </a>
+                      </div>
+                      <div class="contentBx">
+                          <h4> <br> Felix Baumann</h4>
+                          <h5>HASEL Fabrication, Mechanical Design and Integration, Sponsoring
+                          </h5>
+                      </div>
+                      <!-- <div class="sci">
+                          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      </div> -->
+                  </div>
+              </div>
+      
+          </div>
+        </li>
+
+          
+
+
+          
+    
+
+        <li class="l-section section">
+          <div class="contact">   
+            <hm2>Contact</hm2>       
+            <div class="contact--lockup">
+              <div class="row">
+                <div class="modal secondModalForMedia">
+                  <div class="modal--information">
+                    <h1>Media Contact</h1>
+                    <img class="modelIMG" src="assets/img/max.JPG" alt="">
+                    <div class="rows3">
+                      <a href="mailto:someone@metasuit@ethz.ch" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/img/mail_FILL1_wght600_GRAD0_opsz48 1.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="mailto:someone@metasuit@ethz.ch" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          metasuit@ethz.ch
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="rows3">
+                      <a href="tel:41-77-466-83-50" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/phone-call.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="tel:41-77-466-83-50" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          +41 77 466 83 50
+                        </h1>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal" style="margin-top: 20px; padding-left: 50px; padding-right: 50px;">
+                  <div class="modalForContactSection">
+                    <div class="rows3">
+                      <a href="https://www.google.com/maps/place/Wasserwerkstrasse+10,+8006+Z%C3%BCrich/@47.3829915,8.5385269,17z/data=!3m1!4b1!4m5!3m4!1s0x47900a0b95d17703:0xb0076e3edf03b99a!8m2!3d47.3829879!4d8.5407156" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/img/pin_drop_FILL1_wght600_GRAD0_opsz48 1.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="https://www.google.com/maps/place/Wasserwerkstrasse+10,+8006+Z%C3%BCrich/@47.3829915,8.5385269,17z/data=!3m1!4b1!4m5!3m4!1s0x47900a0b95d17703:0xb0076e3edf03b99a!8m2!3d47.3829879!4d8.5407156" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          Wasserwerkstrasse 10
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="rows3">
+                      <a href="mailto:someone@metasuit@ethz.ch" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/img/mail_FILL1_wght600_GRAD0_opsz48 1.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="mailto:someone@metasuit@ethz.ch" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          metasuit@ethz.ch
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="rows3">
+                      <a href="https://www.instagram.com/metasuit.ethz/" target="_blank">
+                        <img style="width: 40px; height: 40px; margin-right: 20px;" src="assets/instagram (1).png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="https://www.instagram.com/metasuit.ethz/" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          metasuit.ethz
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="rows3">
+                      <a href="https://www.linkedin.com/company/metasuit/" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/linkedin.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="https://www.linkedin.com/company/metasuit/" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          MetaSuit
+                        </h1>
+                      </a>
+                    </div>
+                    <div class="rows3">
+                      <a href="https://twitter.com/MetaSuit_ETH" target="_blank">
+                        <img style="width: 40px; height: 40px;margin-right: 20px;" src="assets/twitter.png" alt="">
+                      </a>
+                      <a style="text-decoration: none; font-size: 15px;" href="https://twitter.com/MetaSuit_ETH" target="_blank">
+                        <h1 style="text-decoration: none; font-size: 15px;">
+                          metasuit_ETH
+                        </h1>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact--pin">
+              <a class="header--logo"  href="https://www.google.com/maps/place/Wasserwerkstrasse+10,+8006+Z%C3%BCrich/@47.3829915,8.5385269,17z/data=!3m1!4b1!4m5!3m4!1s0x47900a0b95d17703:0xb0076e3edf03b99a!8m2!3d47.3829879!4d8.5407156" target="_blank"> 
+                <input type="image" id="image" alt="METASUIT" src="assets/img/circle_invis.png" class="pin" height="20px">                  
+              </a>
+            </div>
+
+
+          </div>
+
+          <div class="contact2">
+
+
+
+          </div>
+
+        </li>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Vision</li>
+    <li>Technology</li>
+    <li>Project</li>
+    <li>Team</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+<script src="assets/js/functions-new.js"></script>
+</body>
+</html>
